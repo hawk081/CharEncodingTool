@@ -1,0 +1,333 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Tools.rc2""  // ?????§????§?? Microsoft Visual C++ ?????ì????¨???¨?????¨??????§????§??-|????ì????????ì????¨?|????¨??o???\r\n"
+    "#include ""afxres.rc""     // ?????ì????¨???¨?????¨??o?????ì????¨?|??????ì????¨?|????¨??|?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Tools.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 240, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tools - Hawk"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_DEMO,"SysTabControl32",0x0,7,7,233,193
+END
+
+IDD_UNICODECONVERT_DIALOG DIALOGEX 0, 0, 268, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "第一页",IDC_STATIC,205,97,26,11
+    CONTROL         "Convert to Number",IDC_RADIO_TONUMBER,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,23,72,10
+    EDITTEXT        IDC_EDIT_INPUT,5,38,188,24,ES_MULTILINE | ES_AUTOHSCROLL
+    CONTROL         "Convert to Char",IDC_RADIO_TOCHAR,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,12,68,10
+    DEFPUSHBUTTON   "Convert(Enter)",IDOK,200,120,38,13,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,81,120,54,13,NOT WS_VISIBLE
+    CONTROL         "Declimalism",IDC_RADIO_DECLI10,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,97,13,50,10
+    CONTROL         "Hexadeclimal",IDC_RADIO_HEX16,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,97,24,57,10
+    GROUPBOX        "Number System",IDC_STATIC_NUMBER,92,3,63,33
+    EDITTEXT        IDC_EDIT_OUTPUT,5,66,188,24,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "To Char",IDC_BUTTON_TOUNICODE,138,117,61,16,NOT WS_VISIBLE
+    PUSHBUTTON      "To Number",IDC_BUTTON_TONUMBER,2,117,74,16,NOT WS_VISIBLE
+    GROUPBOX        "Number System",IDC_STATIC_METHOD,5,3,84,34
+    GROUPBOX        "\\x",IDC_STATIC,159,3,34,33
+    CONTROL         "\\x",IDC_RADIO_FORMAT_X,"Button",BS_AUTORADIOBUTTON,161,12,20,10
+    CONTROL         "\\u",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,161,24,19,8
+END
+
+IDD_Utf8CONVERT_DIALOG DIALOGEX 0, 0, 266, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "第二页",IDC_STATIC,205,97,26,11
+    CONTROL         "Convert to Number",IDC_RADIO_TONUMBER,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,23,72,10
+    EDITTEXT        IDC_EDIT_INPUT,5,38,188,24,ES_MULTILINE | ES_AUTOHSCROLL
+    CONTROL         "Convert to Char",IDC_RADIO_TOCHAR,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,12,68,10
+    DEFPUSHBUTTON   "Convert(Enter)",IDOK,200,120,38,13,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,81,120,54,13,NOT WS_VISIBLE
+    CONTROL         "Declimalism",IDC_RADIO_DECLI10,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,97,13,50,10
+    CONTROL         "Hexadeclimal",IDC_RADIO_HEX16,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,97,24,57,10
+    GROUPBOX        "Number System",IDC_STATIC_NUMBER,92,3,63,33
+    EDITTEXT        IDC_EDIT_OUTPUT,5,66,188,24,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "To Char",IDC_BUTTON_TOUNICODE,138,117,61,16,NOT WS_VISIBLE
+    PUSHBUTTON      "To Number",IDC_BUTTON_TONUMBER,7,117,74,16,NOT WS_VISIBLE
+    GROUPBOX        "Number System",IDC_STATIC_METHOD,5,3,84,34
+END
+
+IDD_TIPSDLG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Result"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,209,160,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,250,147,50,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_RESULT_TXT_OUT,0,0,319,199,ES_AUTOHSCROLL
+END
+
+IDD_BASE_DIALOG DIALOGEX 0, 0, 268, 189
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Convert to Char",IIDC_RADIO_TOCHAR,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,12,68,10
+    CONTROL         "Convert to Number",IIDC_RADIO_TONUMBER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,23,72,10
+    EDITTEXT        IIDC_EDIT_INPUT,5,38,254,65,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    EDITTEXT        IIDC_EDIT_OUTPUT,5,107,253,72,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX        "Number System",IIDC_STATIC_METHOD,5,3,84,34
+    GROUPBOX        "Output format",IIDC_STATIC_FORMAT,93,3,100,33
+    CONTROL         "\\x",IIDC_RADIO_FORMAT_X,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,98,12,20,10
+    CONTROL         "\\u",IIDC_RADIO_FORMAT_U,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,98,24,19,8
+    CONTROL         "%",IIDC_RADIO_FORMAT_P,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,131,13,19,8
+    CONTROL         "oct",IIDC_RADIO_FORMAT_OCT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,131,24,19,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,1
+ PRODUCTVERSION 0,9,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "N/A"
+            VALUE "FileDescription", "CharEncodingTool.exe"
+            VALUE "FileVersion", "0.9.1"
+            VALUE "InternalName", "CharEncodingTool.exe"
+            VALUE "LegalCopyright", "hawk081@126.com"
+            VALUE "OriginalFilename", "CharEncodingTool.exe"
+            VALUE "ProductName", "CharEncodingTool"
+            VALUE "ProductVersion", "0.9.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_UNICODECONVERT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_Utf8CONVERT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_BASE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 261
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 182
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About CharEncodingTool..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CharEncodingTool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "CharEncodingTool, Version 0.9.1",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Mail: hawk081@126.com",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_ABOUTBOX_EX DIALOGEX 0, 0, 242, 162
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,69,65,20,20
+    LTEXT           "CharEncodingTool, Version 0.9.1",IDC_STATIC,97,65,114,8,SS_NOPREFIX
+    LTEXT           "Mail: hawk081@126.com",IDC_STATIC,97,77,114,8
+    LTEXT           "Change Log:\r\n2015/07/14: fix cp932 convert issue\r\n2015/07/15: support Korean/Thai convert",IDC_STATIC,71,88,125,24
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ABOUTBOX_EX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Tools.rc2"  // ?????§????§?? Microsoft Visual C++ ?????ì????¨???¨?????¨??????§????§??-|????ì????????ì????¨?|????¨??o???
+#include "afxres.rc"     // ?????ì????¨???¨?????¨??o?????ì????¨?|??????ì????¨?|????¨??|?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
