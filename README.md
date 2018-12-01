@@ -26,3 +26,6 @@
 * 支持\xCE\xD2, \uCE\uD2, %CE%D2, \316\322作为输入和输出
 
 ![GBK](https://gitee.com/hawk/CharEncodingTool/raw/master/images/gbk.gif)
+
+## 预编译的可执行文件
+binary/CharEncodingTool-*.exe
